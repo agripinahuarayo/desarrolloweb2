@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Registro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>Registro de Usuario</h2>
+  <form id="registroForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+    
+    <label for="ci">Cédula de Identidad:</label>
+    <input type="text" id="ci" name="ci" required>
+    
+    <label for="fecha">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    
+    <button type="submit"  type="button" class="btn btn-outline-success">Registrar</button>
+    
+  </form>
+  <table id="registroForm">
+    <thead>
+        <tr>
+            <h3>Registros:</h3>
+            <ul id="registrosList" ></ul>
+            
+        </tr>
+      
+    </thead>
+  </table>
+
+  
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="frm.js"></script>
+
+</body>
+</html>
